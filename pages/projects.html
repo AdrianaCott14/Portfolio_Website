@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+
+            $(".hamburger").click(function() {
+                $(".menu-bar").addClass("open");
+            });
+
+            $(".close").click(function() {
+                $(".menu-bar").removeClass("open");
+            });
+
+        });
+    </script>
+    <meta charset="utf-8">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Public+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/dogfavicon.ico">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu-bar">
+            <div class="hamburger">
+                <svg viewBox="0 0 32 32">
+                    <use xlink:href="#hamburger-menu" />
+                </svg>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="pages/resume.html">Resume</a></li>
+                    <li><a class="active" href="#">Projects</a></li>
+                </ul>
+                <div class="close">
+                    <svg viewBox="0 0 32 32">
+                        <use xlink:href="#close-icon" />
+                    </svg>
+                </div>
+            </nav>
+        </div>
+        <svg class="svg-info" xmlns="http://www.w3.org/2000/svg">
+
+            <symbol id="hamburger-menu">
+                <path d="M4 10h24a2 2 0 000-4H4a2 2 0 000 4zm24 4H4a2 2 0 000 4h24a2 2 0 000-4zm0 8H4a2 2 0 000 4h24a2 2 0 000-4z" />
+            </symbol>
+
+            <symbol id="close-icon">
+                <g>
+                    <path stroke="null" d="M28.703 25.14L19.563 16l9.14-9.14a2.513 2.513 0 000-3.563 2.513 2.513 0 00-3.563 0L16 12.437l-9.14-9.14a2.513 2.513 0 00-3.563 0 2.513 2.513 0 000 3.563l9.14 9.14-9.14 9.14a2.513 2.513 0 000 3.563 2.513 2.513 0 003.563 0l9.14-9.14 9.14 9.14a2.513 2.513 0 003.563 0c.98-.987.98-2.583 0-3.563z" />
+                </g>
+            </symbol>
+        </svg>
+    </header>
+    <main>
+        <h1>About</h1>
+        <p>There are some people out there who think they are are <em>'cat people'</em></p>
+        <aside>
+            <figure><img src="../images/IMG_3029.JPG" alt="dog sticking its tongue out">
+                <figcaption>If this doesn't convince you, I don't know what will</figcaption>
+            </figure>
+            <h2>So...</h2>
+            <p>Basically dogs rule and cats drool.</p>
+            <h3>Simple Science</h3>
+            <p>It is known that 100% of sane people will agree that dogs are better than cats. If that doesn't convince you then you might need to go see a brain doctor of some sorts.</p>
+        </aside>
+        <h2>Please enjoy these cute dogs</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="image-wrapping">
+                    <img sizes="(min-width: 901px) 25vw, (min-width: 481px) 50vw, 100vw" srcset="
+                    ../images/dog-ball-200.jpg 200w
+                    ../images/dog-ball-424.jpg 424w
+                    ../images/dog-ball-589.jpg 589w
+                    ../images/dog-ball-723.jpg 723w
+                    ../images/dog-ball-839.jpg 839w
+                    ../images/dog-ball-961.jpg 961w
+                    ../images/dog-ball-1271.jpg 1271w
+                    ../images/dog-ball-1400.jpg 1400w
+                    ../images/dog-ball-1600.jpg 1600w" src="../images/dog-ball-1600.jpg" alt="beagle running with a ball">
+                </div>
+                <div class="text-wrapping">
+                    <p>Such a cute doggo</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-wrapping">
+                    <img sizes="(min-width: 901px) 25vw, (min-width: 481px) 50vw, 100vw" srcset="
+                    ../images/dog-ball-200.jpg 200w
+                    ../images/dog-ball-424.jpg 424w
+                    ../images/dog-ball-589.jpg 589w
+                    ../images/dog-ball-723.jpg 723w
+                    ../images/dog-ball-839.jpg 839w
+                    ../images/dog-ball-961.jpg 961w
+                    ../images/dog-ball-1271.jpg 1271w
+                    ../images/dog-ball-1400.jpg 1400w
+                    ../images/dog-ball-1600.jpg 1600w" src="../images/dog-ball-1600.jpg" alt="beagle running with a ball">
+                </div>
+                <div class="text-wrapping">
+                    <p>This one is jsut as cute</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-wrapping">
+                    <img sizes="(min-width: 901px) 25vw, (min-width: 481px) 50vw, 100vw" srcset="
+                    ../images/dog-ball-200.jpg 200w
+                    ../images/dog-ball-424.jpg 424w
+                    ../images/dog-ball-589.jpg 589w
+                    ../images/dog-ball-723.jpg 723w
+                    ../images/dog-ball-839.jpg 839w
+                    ../images/dog-ball-961.jpg 961w
+                    ../images/dog-ball-1271.jpg 1271w
+                    ../images/dog-ball-1400.jpg 1400w
+                    ../images/dog-ball-1600.jpg 1600w" src="../images/dog-ball-1600.jpg" alt="beagle running with a ball">
+                </div>
+                <div class="text-wrapping">
+                    <p>Didn't think it could get cuter?</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-wrapping">
+                    <img sizes="(min-width: 901px) 25vw, (min-width: 481px) 50vw, 100vw" srcset="
+                    ../images/dog-ball-200.jpg 200w
+                    ../images/dog-ball-424.jpg 424w
+                    ../images/dog-ball-589.jpg 589w
+                    ../images/dog-ball-723.jpg 723w
+                    ../images/dog-ball-839.jpg 839w
+                    ../images/dog-ball-961.jpg 961w
+                    ../images/dog-ball-1271.jpg 1271w
+                    ../images/dog-ball-1400.jpg 1400w
+                    ../images/dog-ball-1600.jpg 1600w" src="../images/dog-ball-1600.jpg" alt="beagle running with a ball">
+                </div>
+                <div class="text-wrapping">
+                    <p>It just did!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <a class="back-to-top button" href="#">Back to top</a>
+    <footer class="footer">
+        <p>GitHub</p>
+    </footer>
+</body></html>

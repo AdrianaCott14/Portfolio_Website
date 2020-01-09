@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+
+            $(".hamburger").click(function() {
+                $(".menu-bar").addClass("open");
+            });
+
+            $(".close").click(function() {
+                $(".menu-bar").removeClass("open");
+            });
+
+        });
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adriana Cottle</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Public+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/dogfavicon.ico">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="hero overlay">
+        <picture>
+            <source srcset="images/fall-barn-full.jpg" media="(min-width: 1201px)">
+            <source srcset="images/fall-barn-800.jpg" media="(min-width: 801px)">
+            <source srcset="images/fall-barn-400(1).jpg" media="(max-width: 800px)">
+
+            <img src="images/fall-barn-full.jpg" alt="Adriana Cottle">
+        </picture>
+        <div class="text-wrapper">
+            <h1>Adriana Cottle</h1>
+            <p>Une fille, pas comme les autres</p>
+        </div>
+    </div>
+    <header>
+        <div class="menu-bar">
+            <div class="hamburger">
+              <svg viewBox="0 0 32 32">
+                    <use xlink:href="#hamburger-menu" />
+                </svg>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="pages/resume.html">Resume</a></li>
+                    <li><a href="pages/projects.html">Projects</a></li>
+                </ul>
+                <div class="close">
+                    <svg viewBox="0 0 32 32">
+                        <use xlink:href="#close-icon" />
+                    </svg>
+                </div>
+            </nav>
+        </div>
+        <svg class="svg-info" xmlns="http://www.w3.org/2000/svg">
+
+            <symbol id="hamburger-menu">
+                <path d="M4 10h24a2 2 0 000-4H4a2 2 0 000 4zm24 4H4a2 2 0 000 4h24a2 2 0 000-4zm0 8H4a2 2 0 000 4h24a2 2 0 000-4z" />
+            </symbol>
+
+            <symbol id="close-icon">
+                <g>
+                    <path stroke="null" d="M28.703 25.14L19.563 16l9.14-9.14a2.513 2.513 0 000-3.563 2.513 2.513 0 00-3.563 0L16 12.437l-9.14-9.14a2.513 2.513 0 00-3.563 0 2.513 2.513 0 000 3.563l9.14 9.14-9.14 9.14a2.513 2.513 0 000 3.563 2.513 2.513 0 003.563 0l9.14-9.14 9.14 9.14a2.513 2.513 0 003.563 0c.98-.987.98-2.583 0-3.563z" />
+                </g>
+            </symbol>
+        </svg>
+    </header>
+    <div class="panel">
+        <div class="text-wrap">
+            <h1>Cute Dog</h1>
+            <p>Observe the cute papillion in his natural habitat</p>
+        </div>
+        <div class="image-wrap">
+            <img src="images/IMG_0640.JPG" alt="dog sleeping">
+        </div>
+
+    </div>
+    <main>
+        <div class=tagline>
+            <aside>
+                <p>Dogs are so fun!</p>
+            </aside>
+        </div>
+
+    </main>
+    <div class="panel">
+        <div class="text-wrap">
+            <h2>Want more cute dogs?</h2>
+            <p>Call now for more cute dogs: <a href="tel:248-434-5508">248-434-5508</a></p>
+            <p>This is filler text, like lots of filler text. This is filler text, like lots of filler text. This is filler text, like lots of filler text. ler text. This is filler text, like lots of filler text.T text. This is filler text, like lots of filler text.</p>
+        </div>
+        <div class="image-wrap left">
+            <img src="images/IMG_3029.JPG" alt="">
+        </div>
+    </div>
+<!--    <a class="back-to-top button" href="#">Back to top</a>-->
+    <footer class="footer">
+        <p>GitHub</p>
+    </footer>
+</body></html>
