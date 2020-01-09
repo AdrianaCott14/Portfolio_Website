@@ -301,92 +301,8 @@ nav {
     order: -1;
 }
 
-.cards {
-    font-family: var(--font-heading);
-    font-weight: 600;
-    font-size: 50px;
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-
-.card {
-    position: relative;
-    margin: 10px;
-}
-
-.image-wrapping {
-    transition: transform 300ms ease;
-}
-
-.image-wrapping::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    box-shadow: 0px 12px 15px rgba(154, 154, 154, 0.87);
-    transition: opacity 300ms ease;
-}
-
-.text-wrapping {
-    background-color: rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    align-items: flex-end;
-    transition: transform 300ms ease;
-}
-
-.text-wrapping p {
-    color: white;
-    margin: 4px;
-}
-
-.card img {
-    display: block;
-    width: 100%;
-}
-
-.card:hover .text-wrapping {
-    background-color: transparent;
-    transform: translate(0px, -10px);
-}
-
-.card:hover .image-wrapping {
-    transform: translate(0px, -10px);
-}
-
-/* opacity */
-.card:hover .image-wrapper:before {
-    opacity: 1;
-}
-
-.card .image-wrapper {
-    width: 100%;
-    height: 100%;
-}
-
 
 @media (min-width: 481px) {
-    .cards {
-        flex-direction: row;
-        font-size: 25px;
-        flex-wrap: wrap;
-    }
-
-    .card {
-        flex: 40%;
-    }
-
     .panel {
         flex-direction: row;
     }
@@ -394,31 +310,129 @@ nav {
 }
 
 @media (min-width: 901px) {
-    .cards {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        font-size: 15px;
-    }
+
 }
 
 @media (max-width: 480px) {
-    form {
-        grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: auto;
-    }
-
-    .checkboxes,
-    .radio,
-    .opinion {
-        grid-column: 1/1;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="date"],
-    textarea {
-        max-width: 200px;
-    }
+    
 
 }
+
+.codepen ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+ .codepen li {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .codepen .image-wrap img {
+    display: block;
+    width: 100%;
+  }
+
+  .codepen .overlayer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1000ms ease;
+  }
+
+  .codepen .image-wrap {
+    /*  transition: whatToTransition timeItTakes theTransition */
+      transition: transform 500ms ease;
+    }
+
+.codepen li:hover .image-wrap {
+    transform: scale(1.2);
+    }
+.codepen li:hover .overlayer {
+    opacity: 1;
+  }
+
+.text-content {
+    color: #fff;
+    text-shadow: 1px 1px 3px #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+  }
+  .text-content > h2,
+  .text-content > p {
+    margin: 0.3rem 0;
+  }
+  
+  .text-content > h2 {
+    font-size: 1.6rem;
+  }
+  
+  .text-content > p {
+    font-size: 1.2rem;
+  }
+  
+  /* needs position relative to show underline */
+  .text-content > a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 1.25rem;
+    position: relative;
+    cursor: pointer;
+  }
+  .text-content > a::before {
+    content: "";
+   background-color: var(--accent-light);
+   display: block;
+   height: 3px;
+   width: 100%;
+   position: absolute;
+   bottom: -6px;
+   transform: scale(0);
+   transition: transform 250ms ease-in;
+ 
+   /* this reverse the direction of the scale after the hover */
+   transform-origin: 100% 0;
+ }
+ .text-content > a::after {
+    content: "→";
+    font-size: 1.5rem;
+    margin-left: 0.25rem;
+    position: absolute;
+    top: -0.5rem;
+    transition: transform 300ms ease-in 200ms;
+  /*   thisIsADelay */
+  }
+  
+  /* add a transform to scale the underline */
+  .text-content > a:hover::before {
+    transform: scale(1);
+    /* this makes the underline appear from the left */
+    transform-origin: 0 0;
+  }
+
+  .text-content > a:hover::after {
+    transform: translatex(8px);
+  }
+   /* move the arrow */
+  aside {
+    margin: 5em;
+    align-self: flex-start;
+  }
+  
+  aside li {
+    margin-bottom: 0.5em;
+  }
