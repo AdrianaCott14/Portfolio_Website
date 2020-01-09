@@ -43,7 +43,8 @@ h3 {
 }
 
 p,
-label {
+label,
+a {
     font-family: var(--font-para);
     text-align: left;
 
@@ -326,6 +327,7 @@ nav {
  .codepen li {
     position: relative;
     overflow: hidden;
+    margin: 10px;
   }
 
   .codepen .image-wrap img {
