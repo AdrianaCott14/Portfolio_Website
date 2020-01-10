@@ -333,6 +333,8 @@ nav {
   .codepen .image-wrap img {
     display: block;
     width: 100%;
+    width: 350px;
+    height: 250px;
   }
 
   .codepen .overlayer {
