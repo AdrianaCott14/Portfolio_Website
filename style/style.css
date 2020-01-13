@@ -59,16 +59,12 @@ img {
     min-width: 100px;
 }
 
-figure img {
-    width: 300px;
-    display: block;
-    margin-bottom: 10px;
-    width: 100%;
-}
+.about {
+    margin-bottom: 50px;
 
-figcaption {
-    text-align: left;
-    font-family: var(--font-para);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
 }
 
 header {
