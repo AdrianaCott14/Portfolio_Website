@@ -443,3 +443,9 @@ nav {
   aside li {
     margin-bottom: 0.5em;
   }
+
+  embed {
+      width: 800px;
+      height: 1000px;
+      margin-bottom: 50px;
+  }
