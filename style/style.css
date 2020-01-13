@@ -319,6 +319,10 @@ nav {
 
 }
 
+.codepen {
+    margin: 60px 0;
+}
+
 .codepen ul {
     list-style-type: none;
     display: flex;
