@@ -444,8 +444,21 @@ nav {
     margin-bottom: 0.5em;
   }
 
-  embed {
-      width: 800px;
-      height: 1000px;
-      margin-bottom: 50px;
-  }
+embed {
+    width: 800px;
+    height: 1000px;
+    margin-bottom: 50px;
+}
+
+/* Style for the website section of PFE page */
+#pfeWeb {
+    width: 500px;
+}
+
+.website {
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+    display: flex;
+}
+
+
