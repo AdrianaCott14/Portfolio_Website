@@ -5,7 +5,7 @@ light grey - #B2ACAA
 dark grey - #7F827B
 pink - #A04E58
 */
-
+ /* Variables for colors */
 :root {
     --background-color: #F8F7F7;
     --accent-light: #E6BB37;
@@ -20,6 +20,7 @@ pink - #A04E58
     box-sizing: border-box;
 }
 
+/* main style */
 body {
     background-color: var(--background-color);
     color: var(--dark-color);
@@ -59,6 +60,7 @@ img {
     min-width: 100px;
 }
 
+/* home page bio */
 .about {
     margin-bottom: 50px;
 
@@ -66,7 +68,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
 }
-
+ /* header and nav */
 header {
     order: -1;
 }
@@ -177,6 +179,7 @@ nav {
     }
 }
 
+/* button */
 .button {
     display: inline-block;
     position: fixed;
@@ -203,6 +206,8 @@ nav {
     color: var(--accent-light);
     border-bottom: 2px solid var(--accent-light);
 }
+
+/* hero image */
 
 .hero img {
     display: flex;
@@ -243,6 +248,8 @@ nav {
     color: var(--light-color);
 }
 
+/* footer */
+
 .footer {
     background-color: var(--accent-light);
     color: white;
@@ -259,45 +266,7 @@ nav {
     max-width: 20px;
 }
 
-/*
-.panel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    background-color: pink;
-    padding: 30px;
-}
-
-.panel .text-wrap {
-    margin: 20px;
-    flex: 1 1 auto;
-    max-width: 40em;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    max-width: calc(40em + 340px);
-}
-
-.panel > .image-wrap {
-    flex: 1 1 300px;
-    max-width: 340px;
-    min-width: 150px;
-}
-*/
-
-.tagline {
-    font-size: 40px;
-    margin: 100px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.left {
-    order: -1;
-}
-
+/* Media queries -- might not need for now */
 
 @media (min-width: 481px) {
     .panel {
@@ -314,6 +283,7 @@ nav {
     
 }
 
+/* interactive cards */
 .codepen a {
     text-decoration: none;
     color: var(--background-color);
@@ -461,4 +431,7 @@ embed {
     display: flex;
 }
 
+.insta {
+    display: flex;
+}
 
