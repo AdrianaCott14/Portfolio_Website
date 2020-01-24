@@ -433,5 +433,22 @@ embed {
 
 .insta {
     display: flex;
+    justify-content: space-between;
+}
+
+/* The website section of Projects */
+
+.websitePage img {
+    width: 420px;
+}
+
+.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.reverse img {
+    margin: 0px;
 }
 
