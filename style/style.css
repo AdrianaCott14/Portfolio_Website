@@ -433,7 +433,12 @@ embed {
 
 .insta {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instaCard {
+    margin: 20px 0px;
 }
 
 /* The website section of Projects */
